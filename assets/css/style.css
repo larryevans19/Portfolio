@@ -270,7 +270,7 @@ hr {
 and (max-width: 980px) {
 /* and (min-width: 768px) { */
     .wrapper {
-        background-color: darkgoldenrod;
+        /* background-color: darkgoldenrod; */
         width: 630px;
     }
 
@@ -289,12 +289,13 @@ and (max-width: 980px) {
 and (max-width: 768px) {
 
     .wrapper {
-        background-color: lime;
-        width: 630px;
+        /* background-color: lime; */
+        min-width: 630px;
+        width: 90%;
     }
 
     .navbar {
-        width: 90%;
+        width: 95%;
     }
 
     .inputs {
@@ -304,14 +305,21 @@ and (max-width: 768px) {
 
 @media screen
 and (max-width: 641px)
-and (min-width: 300px) {
+/* and (min-width: 100px) { */{
     .wrapper {
-        background-color: lightblue;
-        width: 550px;
-        margin-top: 150px;
+        /* background-color: lightblue; */
+        width: 80%;
+        margin-top: 90px;
+        min-width: 485px;
     }
 
     .navbar {
+        width: 100%;
+    }
+
+    header {
+        position: static;
+        min-width: 530px;
         width: 100%;
     }
 
@@ -332,19 +340,51 @@ and (min-width: 300px) {
         padding-right: 25%;
         padding-left: 25%;
         background-color: #ffffff;
-    
-
     }
 
     .inputs {
         width: 95%;
     }
 
+  
     .box {
-        height: 250px;
-        width: 300px;
+        height: 405px;
+        width: 485px;
         background-repeat: no-repeat;
         background-size: cover;
-        position: inline-block;
-        margin-top: 20px
-}
+        position: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        left: 0;
+    }
+
+    .box::after {
+        content: "";
+        clear: both;
+        /* display: table; */
+    }
+
+    #face {
+        width: 300px;
+        height: 400px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float:none;
+        margin-bottom: 15px;
+    }
+
+    .banner {
+        background-color: #4aaaa5;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        bottom: -270px;
+        padding: 25px 0px 25px 0px;
+        width: auto;
+        font-size: x-large;
+        font-weight: normal;
+    }
+    .content {
+        min-height: calc(100vh - 100px);
+        margin-bottom: 20px
