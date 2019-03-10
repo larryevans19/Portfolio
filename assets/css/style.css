@@ -239,6 +239,7 @@ hr {
     border: none;
     padding: 10px 20px 10px 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #submit:hover {
@@ -256,6 +257,17 @@ hr {
     width: auto;
     font-size: large;
     font-weight: normal;
+    /* BONUS- CSS ANIMATIONS! */
+    animation-name: bonus;
+    animation-duration: 5s;
+}
+   
+@keyframes bonus {
+    0%   {background-color: #4aaaa5;}
+    25%  {background-color: #b2971a;}
+    50%  {background-color: #4aaaa5;}
+    75%  {background-color: #ff88ea}
+    100% {background-color: #4aaaa5;}
 }
 
 .banner:hover {
@@ -274,7 +286,8 @@ and (max-width: 980px) {
 /* and (min-width: 768px) { */
     .wrapper {
         /* background-color: darkgoldenrod; */
-        width: 630px;
+        width: 640px;
+        margin-left: 45px;
     }
 
     .navbar {
@@ -282,7 +295,7 @@ and (max-width: 980px) {
     }
 
     .inputs {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -290,35 +303,54 @@ and (max-width: 980px) {
 @media screen
 /* and (min-width: 979px)  */
 and (max-width: 768px) {
-
     .wrapper {
         /* background-color: lime; */
-        min-width: 630px;
-        width: 90%;
+        min-width: 530px;
+        width: 95%;
+        margin-left: 15px;
     }
 
     .navbar {
-        width: 95%;
-        min-width: 648px;
+        width: 90%;
+        min-width: 640px;
     }
 
-    .inputs {
-        width: 95%;
+    .content {
+        width: 90%;
+        min-width: 580px;
+        margin-left: 15px;
     }
+    .inputs {
+        width: 100%;
+     
+    }
+
+    .footer {
+        /* width: 100%; */
+        min-width: 640px;
 }
 
+
 @media screen
-and (max-width: 641px)
+and (max-width: 640px)
 /* and (min-width: 100px) { */{
     .wrapper {
         /* background-color: lightblue; */
-        width: 80%;
+        width: 95%;
         margin-top: 160px;
         min-width: 485px;
+        margin-left: 8px;
+        max-width: 570px;
+    }
+
+    body {
+        min-width: 622px;
+        width: 95%
     }
 
     .navbar {
         width: 100%;
+        min-width: 639px;
     }
 
     header {
@@ -346,13 +378,16 @@ and (max-width: 641px)
     }
 
     .inputs {
-        width: 95%;
+        width: 100%;
     }
 
+    .box-set {
+        width: 100%
+    }
   
     .box {
-        height: 405px;
-        width: 485px;
+        height: 450px;
+        width: 540px;
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 0px;
@@ -381,13 +416,21 @@ and (max-width: 641px)
         color: #ffffff;
         text-align: center;
         position: relative;
-        bottom: -270px;
-        padding: 25px 0px 25px 0px;
+        bottom: -300px;
+        padding: 35px 0px 35px 0px;
         width: auto;
         font-size: x-large;
         font-weight: normal;
     }
+
     .content {
         min-height: calc(100vh - 100px);
         margin-bottom: 25px;
+        
+    }
+
+    .footer {
+        width: 100%;
+        min-width: 623px;
+        padding-right: 25px;
     }
