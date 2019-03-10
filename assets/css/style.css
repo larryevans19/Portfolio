@@ -1,7 +1,6 @@
 body {
     background-image: url("../images/hex.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
 }
 
 header, h1, h2, .banner {
@@ -20,7 +19,7 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 65px;
+    /* height: 65px; */
     border-bottom: 2px solid #cccccc;
 }
 
@@ -134,63 +133,36 @@ footer {
 .box-set {
     width: 100%;
     background-color: #ffffff;
-    /* margin: 0 auto; */
-    padding: 0px 0px 80px 0px;
-    /* border: 1px solid #dddddd; */
-    /* margin-top: 90px; */
-    /* margin-bottom: 15px; */
+    padding: 0px 0px 20px 0px;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* .box-set::after {
-    content: "";
-    display: block;
-    clear: both;
-} */
-
 .box {
     height: 250px;
     width: 300px;
-    background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
 }
 
 .box-1 {
     background-image: url("../images/proj1.png");
-    /* float: left; */
- }
+}
   
 .box-2 {
     background-image: url("../images/proj2.png");
-    /* float: left; */
-    /* position: relative; */
-    /* left: 30px; */
 }
   
 .box-3 {
     background-image: url("../images/proj3.png");
-    /* clear: both; */
-    /* float: left; */
-    /* position: relative;
-    top: 20px; */
 }
   
 .box-4 {
     background-image: url("../images/proj4.png");
-    /* float: left; */
-    /* position: relative; */
-    /* left: 30px;
-    top: 20px; */
 }
 
 .box-5 {
     background-image: url("../images/proj5.png");
-    /* float: left; */
-    /* clear: both; */
-    /* position: relative; */
-    /* top: 40px; */
 }
 
 #face {
@@ -207,12 +179,6 @@ footer {
     border: 1px solid #dddddd;
     margin-top: 90px;
 }
-
-/* .wrapper::after {
-    content: "";
-    display: block;
-    clear: both;
-} */
 
 .bio {
     padding: 10px 0px 0px 0px;
@@ -254,7 +220,6 @@ hr {
     position: relative;
     bottom: -170px;
     padding: 15px 0px 15px 0px;
-    width: auto;
     font-size: large;
     font-weight: normal;
     /* BONUS- CSS ANIMATIONS! */
@@ -283,9 +248,7 @@ hr {
 
 @media screen 
 and (max-width: 980px) {
-/* and (min-width: 768px) { */
     .wrapper {
-        /* background-color: darkgoldenrod; */
         width: 640px;
         margin-left: 45px;
     }
@@ -301,10 +264,8 @@ and (max-width: 980px) {
 
 
 @media screen
-/* and (min-width: 979px)  */
 and (max-width: 768px) {
     .wrapper {
-        /* background-color: lime; */
         min-width: 530px;
         width: 95%;
         margin-left: 15px;
@@ -326,8 +287,8 @@ and (max-width: 768px) {
     }
 
     .footer {
-        /* width: 100%; */
         min-width: 640px;
+    }
 }
 
 
@@ -335,7 +296,6 @@ and (max-width: 768px) {
 and (max-width: 640px)
 /* and (min-width: 100px) { */{
     .wrapper {
-        /* background-color: lightblue; */
         width: 95%;
         margin-top: 160px;
         min-width: 485px;
@@ -392,13 +352,12 @@ and (max-width: 640px)
         background-size: cover;
         margin-top: 0px;
         margin-bottom: 20px;
-        /* left: 0; */
     }
 
     .box::after {
         content: "";
         clear: both;
-        /* display: table; */
+       
     }
 
     #face {
@@ -434,3 +393,4 @@ and (max-width: 640px)
         min-width: 623px;
         padding-right: 25px;
     }
+}
