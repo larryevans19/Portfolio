@@ -134,60 +134,63 @@ footer {
 .box-set {
     width: 100%;
     background-color: #ffffff;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0px 0px 80px 0px;
     /* border: 1px solid #dddddd; */
     /* margin-top: 90px; */
     /* margin-bottom: 15px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.box-set::after {
+/* .box-set::after {
     content: "";
     display: block;
     clear: both;
-}
+} */
 
 .box {
     height: 250px;
     width: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 10px;
 }
 
 .box-1 {
     background-image: url("../images/proj1.png");
-    float: left;
+    /* float: left; */
  }
   
 .box-2 {
     background-image: url("../images/proj2.png");
-    float: left;
-    position: relative;
-    left: 30px;
+    /* float: left; */
+    /* position: relative; */
+    /* left: 30px; */
 }
   
 .box-3 {
     background-image: url("../images/proj3.png");
-    clear: both;
-    float: left;
-    position: relative;
-    top: 20px;
+    /* clear: both; */
+    /* float: left; */
+    /* position: relative;
+    top: 20px; */
 }
   
 .box-4 {
     background-image: url("../images/proj4.png");
-    float: left;
-    position: relative;
-    left: 30px;
-    top: 20px;
+    /* float: left; */
+    /* position: relative; */
+    /* left: 30px;
+    top: 20px; */
 }
 
 .box-5 {
     background-image: url("../images/proj5.png");
-    float: left;
-    clear: both;
-    position: relative;
-    top: 40px;
+    /* float: left; */
+    /* clear: both; */
+    /* position: relative; */
+    /* top: 40px; */
 }
 
 #face {
@@ -205,11 +208,11 @@ footer {
     margin-top: 90px;
 }
 
-.wrapper::after {
+/* .wrapper::after {
     content: "";
     display: block;
     clear: both;
-}
+} */
 
 .bio {
     padding: 10px 0px 0px 0px;
@@ -310,7 +313,7 @@ and (max-width: 641px)
     .wrapper {
         /* background-color: lightblue; */
         width: 80%;
-        margin-top: 90px;
+        margin-top: 160px;
         min-width: 485px;
     }
 
@@ -319,7 +322,6 @@ and (max-width: 641px)
     }
 
     header {
-        position: static;
         min-width: 530px;
         width: 100%;
     }
@@ -353,10 +355,9 @@ and (max-width: 641px)
         width: 485px;
         background-repeat: no-repeat;
         background-size: cover;
-        position: block;
         margin-top: 0px;
         margin-bottom: 20px;
-        left: 0;
+        /* left: 0; */
     }
 
     .box::after {
@@ -388,4 +389,5 @@ and (max-width: 641px)
     }
     .content {
         min-height: calc(100vh - 100px);
-        margin-bottom: 20px
+        margin-bottom: 25px;
+    }
