@@ -30,7 +30,7 @@ header {
 
 .nametag {
     float: left;
-    background-color: #4aaaa5;
+    background-color: rgb(179, 163, 105);
     text-align: center;
     color: #ffffff;
     height: 100%;
@@ -78,7 +78,7 @@ nav {
 }
 
 .me {
-    color: #4aaaa5; 
+    color: rgb(179, 163, 105); 
     border-bottom: 2px solid #cccccc; 
     padding-bottom: 20px;  
     margin-bottom: 25px;
@@ -108,7 +108,7 @@ a:hover {
 footer {
     background-color: #666666;
     padding-top: 30px;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid rgb(179, 163, 105);
     height: 25px;
     text-align: center;
     width: 100%;
@@ -124,7 +124,7 @@ footer {
     background-color: #ffffff;
     width: 920px;
     margin: 0 auto;
-    color:#4aaaa5;
+    color:rgb(179, 163, 105);
     padding: 10px 20px 10px 20px;
     border-bottom: 5px solid #cccccc;
 }
@@ -151,14 +151,15 @@ footer {
   
 .box-2 {
     background-image: url("../images/proj2.png");
+    background-size: 100% 100%;
 }
   
 .box-3 {
-    background-image: url("../images/proj3.png");
+    background-image: url("../images/proj5.png");
 }
   
 .box-4 {
-    background-image: url("../images/proj4.png");
+    background-image: url("../images/proj5.png");
 }
 
 .box-5 {
@@ -174,7 +175,7 @@ footer {
     background-color: #ffffff;
     width: 920px;
     margin: 0 auto;
-    color:#4aaaa5;
+    color:rgb(179, 163, 105);
     padding: 10px 20px 10px 20px;
     border: 1px solid #dddddd;
     margin-top: 90px;
@@ -201,7 +202,7 @@ hr {
 
 #submit {
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: rgb(179, 163, 105);
     border: none;
     padding: 10px 20px 10px 20px;
     margin-top: 10px;
@@ -214,7 +215,7 @@ hr {
 }
 
 .banner {
-    background-color: #4aaaa5;
+    background-color: rgb(179, 163, 105);
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -228,11 +229,11 @@ hr {
 }
    
 @keyframes bonus {
-    0%   {background-color: #4aaaa5;}
+    0%   {background-color: rgb(179, 163, 105);}
     25%  {background-color: #b2971a;}
-    50%  {background-color: #4aaaa5;}
-    75%  {background-color: #ff88ea}
-    100% {background-color: #4aaaa5;}
+    50%  {background-color: rgb(179, 163, 105);}
+    75%  {background-color: #b2971a}
+    100% {background-color: rgb(179, 163, 105);}
 }
 
 .banner:hover {
@@ -358,6 +359,16 @@ and (max-width: 640px)
        
     }
 
+    .box-1 {
+        background-image: url("../images/proj1.png");
+        background-size: 100% 100%;
+    }
+      
+    .box-2 {
+        background-image: url("../images/proj2.png");
+        background-size: 100% 100%;
+    }
+
     #face {
         width: 300px;
         height: 400px; 
@@ -369,7 +380,7 @@ and (max-width: 640px)
     }
 
     .banner {
-        background-color: #4aaaa5;
+        background-color: #rgb(179, 163, 105);
         color: #ffffff;
         text-align: center;
         position: relative;
