@@ -1,2 +1,2 @@
-# Responsive-Portfolio
+# Portfolio
 https://larryevans19.github.io/Portfolio/
